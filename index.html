@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>SAC</title>
+		<link rel="icon" href="images/atendimento2.png">
+
+		<meta charset="UTF-8">
+		<!--<meta http-equiv="refresh" content="30">-->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="author" content="Houston Santos">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Tecnologia">
+		<meta name="keywords" content="desenvolvimento,programação,banco de dados">
+
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
+
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		
+		<!--API Facebook Português-->
+		<!--<script src="http://connect.facebook.net/pt_BR/all.js"></script>-->
+		<!--API Facebook Inglês-->
+		<!--<script src="http://connect.facebook.net/en_US/all.js"></script>-->
+		<script type="text/javascript" src="js/fb.js"></script>
+	</head>
+
+	<!--<body onload="FB.init();">-->
+	<body>
+		<header>
+			<h1>Serviço de Atendimento ao Consumidor</h1>
+		</header>
+
+		<!--<div id="fb-root"></div>-->
+			
+		<div  id="texto">
+			<img src="images/atendimento1.png" alt=""><br>
+			<h2>Não deixe de nos contar como foi sua experiência.</h2>
+        	<p class="lead">Não deixe de nos contar como foi sua experiência.<br>Realize login através do Facebook e de sua opinião.</p>
+			<!--<fb:login-button></fb:login-button>-->
+			<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>-->
+			<div class="fb-login-button" scope="public_profile,email" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+    	</div>
+
+		<div id="form">
+			<form>
+				<div class="form-group">
+					<label for="InputNome">Nome</label>
+					<input type="text" class="form-control" naem="nome" id="InputName" placeholder="Nome" autofocus required>
+				</div>
+				<div class="form-group">
+					<label for="InputEmail">Email</label>
+					<input type="email" class="form-control" name="email" id="InputEmail" placeholder="meuemail@email.com" required>
+				</div>
+				<div class="form-group">
+					<label for="InputTelefone">Telefone</label>
+					<input type="tel" class="form-control" name="telefone" id="InputTelefone" placeholder="(99) 99999-9999" maxlength="9" required>
+				</div>
+				<div class="form-group">
+					<label for="InputDepartamento">Departamento</label>
+					<input type="text" class="form-control" name="departamento" id="InputDepartamento" list="ListDepartamento" required>
+					<datalist id="ListDepartamento">
+						<option value="Financeiro"></option>
+						<option value="Logística"></option>
+						<option value="Recursos Humano"></option>
+						<option value="Vendas"></option>
+					</datalist>
+				</div>
+				<div class="form-group">
+					<label for="InputMensagem">Mensagem</label>
+					<textarea class="form-control" name="mensagem" id="InputMensagem" rows="4" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary" disabled id="enviar">Enviar</button>
+			</form>
+		</div>	
+	</body>
+
+</html>
