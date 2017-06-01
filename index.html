@@ -24,6 +24,7 @@
 		<!--API Facebook Inglês-->
 		<!--<script src="http://connect.facebook.net/en_US/all.js"></script>-->
 		<script type="text/javascript" src="js/fb.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 	</head>
 
 	<!--<body onload="FB.init();">-->
@@ -35,32 +36,33 @@
 		<!--<div id="fb-root"></div>-->
 			
 		<div  id="texto">
-			<img src="images/atendimento1.png" alt=""><br>
+			<img src="images/atendimento1.png" alt=""><br><br>
+			<div align=center><a href='http://www.counter12.com'><img src='http://www.counter12.com/img-b57b5814BZD1xwWd-8.gif' border='0' alt='free counter'></a><script type='text/javascript' src='http://www.counter12.com/ad.js?id=b57b5814BZD1xwWd'></script></div>
 			<h2>Não deixe de nos contar como foi sua experiência.</h2>
-        	<p class="lead">Não deixe de nos contar como foi sua experiência.<br>Realize login através do Facebook e de sua opinião.</p>
+        	<p class="lead">Sua opnião é muito importante para melhorioa do nosso atendimento.<br>realize login através do Facebook e de sua opinião.</p>
 			<!--<fb:login-button></fb:login-button>-->
 			<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>-->
 			<div class="fb-login-button" scope="public_profile,email" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
     	</div>
 
 		<div id="form">
-			<form>
+			<form id="atendimento" name="atendimento" method="get">
 				<div class="form-group">
 					<label for="InputNome">Nome</label>
-					<input type="text" class="form-control" naem="nome" id="InputName" placeholder="Nome" autofocus required>
+					<input type="text" class="form-control" name="nome" id="inputName" placeholder="Nome" autofocus required>
 				</div>
 				<div class="form-group">
 					<label for="InputEmail">Email</label>
-					<input type="email" class="form-control" name="email" id="InputEmail" placeholder="meuemail@email.com" required>
+					<input type="email" class="form-control" name="email" id="inputEmail" placeholder="meuemail@email.com" required>
 				</div>
 				<div class="form-group">
 					<label for="InputTelefone">Telefone</label>
-					<input type="tel" class="form-control" name="telefone" id="InputTelefone" placeholder="(99) 99999-9999" maxlength="9" required>
+					<input type="tel" class="form-control" name="telefone" id="inputFone" placeholder="(99) 99999-9999" maxlength="11" required>
 				</div>
 				<div class="form-group">
 					<label for="InputDepartamento">Departamento</label>
-					<input type="text" class="form-control" name="departamento" id="InputDepartamento" list="ListDepartamento" required>
-					<datalist id="ListDepartamento">
+					<input type="text" class="form-control" name="departamento" id="inputDep" list="ListDep" required>
+					<datalist id="ListDep">
 						<option value="Financeiro"></option>
 						<option value="Logística"></option>
 						<option value="Recursos Humano"></option>
@@ -69,9 +71,9 @@
 				</div>
 				<div class="form-group">
 					<label for="InputMensagem">Mensagem</label>
-					<textarea class="form-control" name="mensagem" id="InputMensagem" rows="4" required></textarea>
+					<textarea class="form-control" name="mensagem" id="inputMensagem" rows="4" required></textarea>
 				</div>
-				<button type="submit" class="btn btn-primary" disabled id="enviar">Enviar</button>
+				<button type="submit" class="btn btn-primary" disabled id="enviar" onclick="dadosXml();">Enviar</button>
 			</form>
 		</div>	
 	</body>

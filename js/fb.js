@@ -12,10 +12,10 @@
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    /*js.src = "//connect.facebook.net/en_US/sdk.js";*/
-    js.src = "//connect.facebook.net/pt_BR/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
+        js = d.createElement(s); js.id = id;
+        /*js.src = "//connect.facebook.net/en_US/sdk.js";*/
+        js.src = "//connect.facebook.net/pt_BR/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
 //
@@ -61,12 +61,12 @@ function sistemafgweb() {
     FB.api('/me', {fields: 'name, email'}, function(response) {
         console.log('Successful login for: ' + response.name);
         console.log(JSON.stringify(response));
-        document.getElementById('InputName').value = response.name;
-        document.getElementById('InputEmail').value = response.email;
-        /*document.getElementById('InputName').innerHTML = response.name;
-        document.getElementById('InputEmail').innerHTML = response.email;*/
-        document.getElementById('enviar').disabled = false;
-        /*document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';*/
+        document.getElementById('inputName').value = response.name;
+        document.getElementById('inputEmail').value = response.email;
+        document.getElementById('enviar').disabled = false;      
+        //document.getElementById('inputName').innerHTML = response.name;
+        //document.getElementById('inputEmail').innerHTML = response.email;
+        //document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';
     });
 }
 

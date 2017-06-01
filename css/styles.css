@@ -11,6 +11,7 @@ header {
     background-color: #828282;
     box-shadow: 1px 2px 3px black;
     color: #fff;    
+    z-index: 9;
 }
 
 #texto {
