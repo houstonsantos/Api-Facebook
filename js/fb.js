@@ -61,11 +61,11 @@ function sistemafgweb() {
     FB.api('/me', {fields: 'name, email'}, function(response) {
         console.log('Successful login for: ' + response.name);
         console.log(JSON.stringify(response));
-        document.getElementById('inputName').value = response.name;
-        document.getElementById('inputEmail').value = response.email;
+        //document.getElementById('inputName').value = response.name;
+        //document.getElementById('inputEmail').value = response.email;
         document.getElementById('enviar').disabled = false;      
-        //document.getElementById('inputName').innerHTML = response.name;
-        //document.getElementById('inputEmail').innerHTML = response.email;
+        document.getElementById('inputName').innerHTML = response.name;
+        document.getElementById('inputEmail').innerHTML = response.email;
         //document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';
     });
 }
