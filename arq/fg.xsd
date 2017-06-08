@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sistemafgweb.com.br:8080/arq/fg" xmlns:tns="http://sistemafgweb.com.br:8080/arq/fg" elementFormDefault="qualified">
+
+    <element name="chamado" type="tns:chamado"></element>
+    
+    <complexType name="chamado">
+    	<sequence>
+    		<element name="nome" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="email" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="telefone" type="int" maxOccurs="1" minOccurs="1"></element>
+    		<element name="departamento" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="mensagem" type="string" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>
