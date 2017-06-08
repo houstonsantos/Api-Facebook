@@ -7,8 +7,8 @@ header {
     height: 70px;
     text-align: center;
     font-size: 14px;
-    /*background-color: #212121; */
-    background-color: #828282;
+    background-color: #212121; 
+    /*background-color: #828282;*/
     box-shadow: 1px 2px 3px black;
     color: #fff;    
     z-index: 9;
@@ -19,7 +19,6 @@ header {
     left: 30px;
     top: 120px;
     text-align: center;
-    /*background-color: green;*/
     width: 700px;
     padding: 5px 5px 5px 5px;
 }
@@ -28,7 +27,6 @@ header {
     position: absolute;
     right: 60px;
     top: 110px;
-    /*background-color: green;*/
     width: 500px;
     padding: 5px 5px 5px 5px;
 }
