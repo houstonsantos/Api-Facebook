@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tns:chamado xmlns:tns="http://www.example.org/fg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/fg fg.xsd ">
+<tns:chamado xmlns:tns="http://www.example.org/fg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/fg fg.xsd">
   <tns:nome>tns:nome</tns:nome>
   <tns:email>tns:email</tns:email>
   <tns:telefone>0</tns:telefone>
