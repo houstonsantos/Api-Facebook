@@ -7,7 +7,7 @@
     	<sequence>
     		<element name="nome" type="string" maxOccurs="1" minOccurs="1"></element>
     		<element name="email" type="string" maxOccurs="1" minOccurs="1"></element>
-    		<element name="telefone" type="int"></element>
+    		<element name="telefone" type="int" maxOccurs="1" minOccurs="1"></element>
     		<element name="departamento" type="string" maxOccurs="1" minOccurs="1"></element>
     		<element name="mensagem" type="string" maxOccurs="1" minOccurs="1"></element>
     	</sequence>
