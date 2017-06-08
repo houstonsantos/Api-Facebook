@@ -10,16 +10,7 @@ function dadosXml() {
 	//var data = Date
 
 	var xml = '';
-	/*
-	xml =  '<chamado>\n'
-	xml += '  <nome>' + nome + ' </nome>\n';
-	xml += '  <email>' + email + ' </email>\n';
-	xml += '  <telefone>' + telefone + ' </telefone>\n';
-	xml += '  <departamento>' + departamento + ' </departamento>\n';
-	xml += '  <mensagem>' + mensagem + ' </mensagem>\n';
-	xml += '</chamado>';
-	*/
-
+	
 	xml = '<?xml version="1.0" encoding="UTF-8"?>'
 	xml += '<tns:chamado xmlns:tns="http://sistemafgweb.com.br:8080/arq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://sistemafgweb.com.br:8080/arq/fg.xsd">'
 	xml += '<tns:nome>tns:' + nome + '</tns:nome>'
